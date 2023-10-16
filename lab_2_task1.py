@@ -1,6 +1,5 @@
 a = int(input('Введите число: '))
-
 if a % 2 == 1 :
-    print('a - нечетное')
+    print(f' {a} - Нечетное')
 else:
-    print('a - четное')
+    print(f' {a} - Четное')
