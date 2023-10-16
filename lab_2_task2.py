@@ -4,6 +4,5 @@ c=int(input('Введите количество членов:'))
 
 d = 1
 
-while d < c:
-    print(d)
-    d = d + a*(b**c-1)
+for i in range(1, c + 1):
+    print(a * b**(i-1))
