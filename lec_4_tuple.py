@@ -1,7 +1,7 @@
 t = (1, 4, 9)
 print(t)
 print(t[0])
-#c[0] = 3
+#t[0] = 3
 
 d = {'al':4, 4 : 'al', 'str': 'hello' }
 print(d['al'])
