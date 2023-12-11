@@ -1,13 +1,14 @@
 import numpy as np
 
 
-def func(figure, r, b, c, n):
+
+
+def func(figure, r = 0, b = 0, c = 0, n = 0):
+    
     ''' figure = 1 - circle, figure = 2 - square
     '''
-    r = 0
-    b = 0
-    c = 0
-    n = 0
+    
+    
     if figure==1:
         S = np.pi * r**2
     elif figure==2:
@@ -15,8 +16,10 @@ def func(figure, r, b, c, n):
     else:
         S = c * n 
     
+     
+
     return S
 
 
 
-func(1, r=3)
+print(func(3, c = 5, n = 3))
