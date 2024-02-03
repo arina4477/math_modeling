@@ -1,12 +1,15 @@
 import matplotlib.pyplot as plt
+import numpy as np
 
+def giperbola_plotter (k = 1):
 
-def giperbola(K=-10, M=10, N=0.01):
-    x = np.arange(K, M, N)
-    y = 1/x
+    x = np.arange(-10, 10, 1)
+    y = k / x
 
     plt.plot(x, y)
     plt.savefig('fig_6.png')
 
 if __name__ == '__main__':
     giperbola_plotter()
+
+
