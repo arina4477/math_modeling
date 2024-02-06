@@ -3,7 +3,7 @@ import numpy as np
 
 def giperbola_plotter (k = 1):
 
-    x = np.arange(-10, 10, 1)
+    x = np.arange(0.01, 10, 0.1)
     y = k / x
 
     plt.plot(x, y)
