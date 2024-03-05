@@ -14,6 +14,8 @@ def cicloida (a=3):
 if __name__ == '__main__':
     cicloida()
 
+    plt.close()
+
 def astroida (r = 4):
     t = np.arange(0, 10, 0.1)
 
@@ -22,7 +24,7 @@ def astroida (r = 4):
 
     plt.plot(x, y, ls='--', lw=3)
     plt.axis('equal')
-    plt.savefig('fig_task1.png')
+    plt.savefig('fig_task2.png')
 
 if __name__ == '__main__':
    astroida()
