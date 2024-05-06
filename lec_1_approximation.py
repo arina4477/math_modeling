@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from scipy import interpolate
 
 fig, ax = plt.subplots()
 x = [1, 2, 3]

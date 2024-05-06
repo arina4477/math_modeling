@@ -28,7 +28,7 @@ ax.plot(x2, y2, '-', lw=2, color = 'k')
 x = np.append(x, x2)
 y = np.append(y, y2)
 
-t3 =  np.linspace( 3 * np.pi/2, np.pi/2, 200)
+t3 =  np.linspace(3 * np.pi/2, np.pi/2, 200)
 x3 = 380 + 60 * np.cos(t3)
 y3 = 320 - 50 * np.sin(t3)
 ax.plot(x3, y3, '-', lw=2, color = 'k')
@@ -36,45 +36,45 @@ ax.plot(x3, y3, '-', lw=2, color = 'k')
 x = np.append(x, x3)
 y = np.append(y, y3)
 
-t4 =  np.linspace (2 * np.pi, 3 * np.pi/2, 200)
+t4 =  np.linspace (3 * np.pi/2, 2 * np.pi,200)
 x4 = 380 + 100 * np.cos(t4)
-y4 = 160 - 110 * np.sin(t4)
+y4 = 160 - 109.9 * np.sin(t4)
 ax.plot(x4, y4, '-', lw=2, color = 'k')
 
 x = np.append(x, x4)
 y = np.append(y, y4)
 
-t5 =  np.linspace(3 * np.pi/2, np.pi, 200)
+t5 =  np.linspace( np.pi,  3 * np.pi/2,200)
 x5 = 610 + 130 * np.cos(t5)
 y5= 155 - 45 * np.sin(t5)
 ax.plot(x5, y5, '-', lw=2, color = 'k')
 
-# x = np.append(x, x5)
-# y = np.append(y, y5)
+x = np.append(x, x5)
+y = np.append(y, y5)
 
-t6 =  np.linspace(2 * np.pi, 5 * np.pi/2, 200)
-x6 = 610 + 105 * np.cos(t6)
+t6 =  np.linspace( 5 * np.pi/2, 2 * np.pi,200)
+x6 = 610.05 + 105 * np.cos(t6)
 y6 = 300 - 100 * np.sin(t6)
 ax.plot(x6, y6, '-', lw=2, color = 'k')
 
-# x = np.append(x, x6)
-# y = np.append(y, y6)
+x = np.append(x, x6)
+y = np.append(y, y6)
 
 x7 = [715, 690]
 y7 = [300, 580]
-ax.plot(x, y, '-', lw=2, color = 'k')
+ax.plot(x7, y7, '-', lw=2, color = 'k')
 
-# x = np.append(x, x7)
-# y = np.append(y, y7)
+x = np.append(x, x7)
+y = np.append(y, y7)
 
 
 t8 =  np.linspace(np.pi/2, np.pi,  200)
-x8 = 690 + 60 * np.cos(t8)
+x8 = 690.05 + 60 * np.cos(t8)
 y8 = 705 - 125 * np.sin(t8)
 ax.plot(x8, y8, '-', lw=2, color = 'k')
 
-# x = np.append(x, x8)
-# y = np.append(y, y8)
+x = np.append(x, x8)
+y = np.append(y, y8)
 
 
 spline_coords, figure_spline_part = interpolate.splprep([x, y], s=0)
