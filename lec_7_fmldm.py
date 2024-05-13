@@ -59,7 +59,7 @@ if __name__ == '__main__':
                     )
 
     
-    ani.save('animation_11.gif')
+    ani.save('animation_9.gif')
 # # Определение параметров циклоиды
 # радиус = 1
 # диаметр = 2 * радиус
