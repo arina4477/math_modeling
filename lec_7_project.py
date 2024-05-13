@@ -17,8 +17,7 @@ def update(frame):
     xdata.append(2 * (frame - np.sin(frame)))
     ydata.append(2 * (1 - np.cos(frame)))
     anim_object.set_data(xdata, ydata)
-
-    ball.set_data(circle_move(R=2, vx0 = 0.09, vy0=0.0001, time = frame))
+    ball.set_data(circle_move(R=4, vx0 = 1.8, vy0=0.0001, time = frame))
 
 
 if __name__ == '__main__':
@@ -26,10 +25,10 @@ if __name__ == '__main__':
     ball, = plt.plot([], [], '-', color='r', label ='triangle')
     anim_object, = plt.plot([], [], '-', lw=2)
 
-    edge = 8
+    edge = 20
     plt.axis('equal')
-    ax.set_xlim(-edge, edge)
-    ax.set_ylim(-edge, edge)
+    ax.set_xlim(0, edge)
+    ax.set_ylim(-8, edge)
 
     ani = FuncAnimation(fig,
                     update,
