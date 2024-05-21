@@ -141,9 +141,9 @@ def bell_function(x, y, intensity=1, dec_rate=[0.5, 0.5]):
     scalar_func = intensity * np.exp(- dec_rate[0]*x**2 - dec_rate[1]*y**2) 
     return scalar_func
 
-intensity_centerums_x = [500, 0.5, -0.4, 0.0, 0.4]
-intensity_centerums_y = [300, 0.3, -0.5, -0.7, -0.5]
-intensity_values = [1.7, 1.7, 1, 0.7, 1]
+intensity_centerums_x = [500, 280, 300, 280, 350, 570, 600, 700]
+intensity_centerums_y = [300, 420, 200, 450, 150, 420, 250, 200]
+intensity_values =      [1.7, 1.2, 0.7, 0.7, 0.5, 0.5, 0.7, 0.9]
 
 def scalar_function(x, y, int_cen_x, int_cen_y, int_vel):
     scalar_field = 0.0
